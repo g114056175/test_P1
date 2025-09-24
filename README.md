@@ -62,3 +62,6 @@ The model's performance is evaluated both quantitatively and qualitatively:
 2.  **Dependencies:** All required libraries are listed in `requirements.txt`.
 3.  **Hosting:** The project code is hosted on GitHub at the specified repository: [https://github.com/huanchen1107/20250920_AutoDepl]https://github.com/g114056175/test_P1).
 4.  **Execution:** The application can be run locally by executing `streamlit run app.py` in the terminal. It can also be deployed to cloud services like Streamlit Community Cloud for public access.
+
+**Live Demo URL:** [https://testp1-3kmuvihdleeochorrzz28s.streamlit.app/](https://testp1-3kmuvihdleeochorrzz28s.streamlit.app/)
+
