@@ -60,8 +60,22 @@ The model's performance is evaluated both quantitatively and qualitatively:
 **Deployment Steps:**
 1.  **Code:** The entire application is contained within a single Python script (`app.py`).
 2.  **Dependencies:** All required libraries are listed in `requirements.txt`.
-3.  **Hosting:** The project code is hosted on GitHub at the specified repository: [https://github.com/huanchen1107/20250920_AutoDepl]https://github.com/g114056175/test_P1).
+3.  **Hosting:** The project code is hosted on GitHub at the specified repository: [https://github.com/g114056175/test_P1](https://github.com/g114056175/test_P1).
 4.  **Execution:** The application can be run locally by executing `streamlit run app.py` in the terminal. It can also be deployed to cloud services like Streamlit Community Cloud for public access.
 
 **Live Demo URL:** [https://testp1-3kmuvihdleeochorrzz28s.streamlit.app/](https://testp1-3kmuvihdleeochorrzz28s.streamlit.app/)
 
+---
+
+## 開發歷程 (Development Process via Prompts)
+
+本專案是透過與 Gemini AI 互動，以下達指令 (Prompt) 的方式逐步建構完成。以下節錄了建構此專案的關鍵指令：
+
+1.  `"說明這個作業 HW1: write python to solve simple linear reg"`
+2.  `"1. CRISP-DM 2. allow user to modify a in ax+b, noise, number of points 3. streamlit or flask web, 框架 deployment 繳交: https://github.com/huanchen1107/20250920_AutoDepl"`
+3.  `"HW1 是教授提供的範例 我要模擬他的做法"`
+4.  `"我想換不同的github 來登入 空間為https://github.com/g114056175/test_P1.git"`
+5.  `"幫我做這些步驟 將vscode 同步到我的github 倉庫"`
+6.  `"似乎無法看到如https://aiotda.streamlit.app/ 的demo"`
+7.  `"在streamlit 上用完了 連結為 https://testp1-3kmuvihdleeochorrzz28s.streamlit.app/ 幫我修改本地vscode內的檔案 如readme的說明並同步到github"`
+8.  `"幫我些改readme 把我對你至今的prompt 除了修正bug的幾個特例外 從開始作業開始全部放上去"`
