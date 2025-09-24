@@ -67,15 +67,59 @@ The model's performance is evaluated both quantitatively and qualitatively:
 
 ---
 
-## 開發歷程 (Development Process via Prompts)
+## 開發歷程 (Prompt-Response Development Log)
 
-本專案是透過與 Gemini AI 互動，以下達指令 (Prompt) 的方式逐步建構完成。以下節錄了建構此專案的關鍵指令：
+本專案是透過與 Gemini AI 互動，以下達指令 (Prompt) 的方式逐步建構完成。以下記錄了主要的「使用者指令」與「AI 回應摘要」。
 
-1.  `"說明這個作業 HW1: write python to solve simple linear reg"`
-2.  `"1. CRISP-DM 2. allow user to modify a in ax+b, noise, number of points 3. streamlit or flask web, 框架 deployment 繳交: https://github.com/huanchen1107/20250920_AutoDepl"`
-3.  `"HW1 是教授提供的範例 我要模擬他的做法"`
-4.  `"我想換不同的github 來登入 空間為https://github.com/g114056175/test_P1.git"`
-5.  `"幫我做這些步驟 將vscode 同步到我的github 倉庫"`
-6.  `"似乎無法看到如https://aiotda.streamlit.app/ 的demo"`
-7.  `"在streamlit 上用完了 連結為 https://testp1-3kmuvihdleeochorrzz28s.streamlit.app/ 幫我修改本地vscode內的檔案 如readme的說明並同步到github"`
-8.  `"幫我些改readme 把我對你至今的prompt 除了修正bug的幾個特例外 從開始作業開始全部放上去"`
+### 1. 專案啟動與需求定義
+
+**使用者指令:**
+> "說明這個作業 HW1: write python to solve simple linear reg"，並隨後補充： "1. CRISP-DM 2. allow user to modify a in ax+b, noise, number of points 3. streamlit or flask web, 框架 deployment..."
+
+**AI 回應摘要:**
+> 理解使用者需要建立一個包含前端互動、後端演算法、並遵循 CRISP-DM 框架的網頁應用。計畫選擇 Streamlit 作為前端框架，並規劃了 `README.md` (遵循 CRISP-DM), `app.py` (應用程式碼), `requirements.txt` (相依性) 三個核心檔案的結構。首先，建立了符合 CRISP-DM 結構的 `README.md`。
+
+### 2. 核心應用程式開發
+
+**使用者指令:**
+> (在 README.md 建立後，隱含的下一步)
+
+**AI 回應摘要:**
+> 接著，編寫了 `app.py` 的完整程式碼，實現了：
+> 1.  使用 Streamlit 建構互動式側邊欄，讓使用者能調整真實的斜率、截距、資料點數量與雜訊大小。
+> 2.  根據使用者輸入即時生成資料。
+> 3.  實作 `solve_simple_linear_regression` 函數來計算模型的最佳擬合線。
+> 4.  使用 Plotly 視覺化，同時呈現資料散佈點、真實線與模型擬合線。
+> 最後，建立了 `requirements.txt` 檔案以定義專案的相依性。
+
+### 3. 專案檔案同步至 GitHub
+
+**使用者指令:**
+> "幫我做這些步驟 將vscode 同步到我的github 倉庫"
+
+**AI 回應摘要:**
+> 根據使用者先前提供的 GitHub 倉庫資訊，執行了 `git remote set-url`, `git add`, `git commit`, `git push` 等一系列指令，將本地建立的所有專案檔案首次同步上傳到使用者的 GitHub 倉庫。
+
+### 4. 部署上線與修正
+
+**使用者指令:**
+> "似乎無法看到如https://aiotda.streamlit.app/ 的demo... (README 中的連結也是錯誤的)"
+
+**AI 回應摘要:**
+> 向使用者解釋了「程式碼託管 (GitHub)」與「應用程式部署 (Streamlit Cloud)」的區別，並提供了在 Streamlit 平台上部署的詳細步驟。同時，修正了 `README.md` 中錯誤的 GitHub 倉庫連結，並將修正同步到 GitHub。
+
+### 5. 完成部署並更新文件
+
+**使用者指令:**
+> "在streamlit 上用完了 連結為 https://.../ 幫我修改本地vscode內的檔案 如readme的說明並同步到github"
+
+**AI 回應摘要:**
+> 將使用者提供成功的 Streamlit Live Demo 連結，更新至 `README.md` 的「Deployment」章節中，並將此最終更新同步到 GitHub。
+
+### 6. 最終文件整理
+
+**使用者指令:**
+> "再開發歷程這邊 1.2 是同一區 3.4 幫我刪除 另外在我提出問題後 幫我簡單的敘述你幫我處理的內容"
+
+**AI 回應摘要:**
+> 根據使用者的要求，重新整理並詳細記錄了以上的「Prompt-回應」開發歷程，並更新 `README.md`。
